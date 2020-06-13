@@ -31,11 +31,11 @@ export default function NewIncident(){
                 }
             });
             history.push('/profile');
-        } catch(err) {
-            alert(err);
+        } catch {
+            alert('Error when trying to register incident. Please try again.');
         }
     }
-//'Error when trying to register incident. Please try again.'
+
     return (
         <div className="new-incident-container">
             <div className="content">
